@@ -10,13 +10,13 @@ mineflayer = require("mineflayer")
 
 config.read("config.ini")
 
-username = config.get("bot", "name")
+username = config.get("bot", "onlineaway9729")
 
 def started(stop):
     global bot
-    bot = mineflayer.createBot({"host": config.get("server", "host"), "port": config.get("server", "port"), "respawn": True if config.get("bot", "auto_respawn") is 1 else False, "username": username})
+    bot = mineflayer.createBot({"host": config.get("LANGNGOO.aternos.me", "LANGNGOO.aternos.me"), "41335": config.get("LANGNGOO.aternos.me", "41335"), "respawn": True if config.get("bot", "auto_respawn") is 1 else False, "username": username})
 
-    print(f"\033[32m[INFO]: {username} is connecting to {config.get('server', 'host')}...\033[0m")
+    print(f"\033[32m[INFO]: {username} is connecting to {config.get('LANGNGOO.aternos.me', 'LANGNGOO.aternos.me:41335')}...\033[0m")
     
     @On(bot, "login")
     def login(this):
